@@ -73,22 +73,30 @@ func (l *Logger) Info(msg string, prop map[string]string) {
 	l.print(Info, msg, prop)
 }
 
+//Error logs a message and optional properties with a level of Error.
+//Includes stackstrace information.
 func (l *Logger) Error(msg string, prop map[string]string) {
 	l.print(Error, msg, prop)
 }
 
+//Fatal logs a message and optional properties with a level of Fatal.
+//Program is shutdown afterwards.
 func (l *Logger) Fatal(msg string, prop map[string]string) {
 	l.print(Fatal, msg, prop)
 }
 
+//Warn logs a message and optional properties with a level of Warn.
 func (l *Logger) Warn(msg string, prop map[string]string) {
 	l.print(Warn, msg, prop)
 }
 
+//Debug logs a message and optional properties with a level of Debug.
+//Use it for debug purposes.
 func (l *Logger) Debug(msg string, prop map[string]string) {
 	l.print(Debug, msg, prop)
 }
 
+//Trace logs a message and optional properties with a level of Trace.
 func (l *Logger) Trace(msg string, prop map[string]string) {
 	l.print(Trace, msg, prop)
 }

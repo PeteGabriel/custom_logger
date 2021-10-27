@@ -3,7 +3,7 @@ package pkg
 //Level definition to represent the severity level of a log entry.
 type Level int8
 
-
+//Definition of the various levels that this logger supports.
 const (
 	Trace Level = iota
 	Debug
